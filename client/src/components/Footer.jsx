@@ -7,7 +7,7 @@ import {
   FooterLinkGroup,
   FooterTitle,
 } from "flowbite-react";
-import { FaFacebook, FaFacebookF, FaGithub, FaInstagram, FaLinkedin, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Footercom() {
@@ -91,6 +91,7 @@ export default function Footercom() {
             </div>
           </div>
         </div>
+      
      <FooterDivider/>
      <div className="w-full sm:flex sm:items-center sm:justify-between">
         <FooterCopyright href="#" by="Govind's blog" year={new Date().getFullYear()}/>
@@ -103,6 +104,7 @@ export default function Footercom() {
 
         </div>
      </div>
+
       </div>
     </Footer>
   );

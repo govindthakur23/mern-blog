@@ -48,8 +48,7 @@ export default function Header() {
           </Button>
           <Link to="/sign-in">
             <Button
-              gradientDuoTone='purpleToBlue' outline
-            >
+              gradientDuoTone='purpleToBlue' outline >
               Sign In
             </Button>
           </Link>
@@ -58,12 +57,8 @@ export default function Header() {
 
         <Navbar.Collapse>
           <Navbar.Link active={path === "/"} as="div">
-            <Link
-              to="/"
-              className={`block py-2 px-4 rounded hover:text-blue-500 ${
-                path === "/" ? "text-blue-500" : ""
-              }`}
-            >
+            <Link to="/" className={`block py-2 px-4 rounded hover:text-blue-500 ${
+                path === "/" ? "text-blue-500" : "" }`} >
               Home
             </Link>
           </Navbar.Link>
