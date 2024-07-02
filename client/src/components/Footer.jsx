@@ -7,15 +7,22 @@ import {
   FooterLinkGroup,
   FooterTitle,
 } from "flowbite-react";
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Footercom() {
   return (
     <Footer className="border-t-8 border-teal-500 p-3">
-      <div className="w-full max-w-7xl mx-auto">
-
+      <div className="w-full max-w-7xl mx-auto">  
+ 
         <div className="grid w-full justify-between sm:flex md:grid-cols-1">
+          {/* logo  */}
           <div className="mt-5">
             <Link
               to="/"
@@ -31,6 +38,7 @@ export default function Footercom() {
               Blog
             </Link>
           </div>
+          {/* items */}
           <div className="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
               <FooterTitle title="About" />
@@ -47,7 +55,7 @@ export default function Footercom() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                 Govind's Blog
+                  Govind's Blog
                 </FooterLink>
               </FooterLinkGroup>
             </div>
@@ -61,49 +69,40 @@ export default function Footercom() {
                 >
                   Github
                 </FooterLink>
-                <FooterLink
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                 Discord
+                <FooterLink href="#" target="_blank" rel="noopener noreferrer">
+                  Discord
                 </FooterLink>
               </FooterLinkGroup>
             </div>
             <div>
               <FooterTitle title="Legal" />
               <FooterLinkGroup col>
-                <FooterLink
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <FooterLink href="#" target="_blank" rel="noopener noreferrer">
                   Privacy Policy
                 </FooterLink>
-                <FooterLink
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                 Terms &amp; Conditions
+                <FooterLink href="#" target="_blank" rel="noopener noreferrer">
+                  Terms &amp; Conditions
                 </FooterLink>
               </FooterLinkGroup>
             </div>
           </div>
         </div>
-      
-     <FooterDivider/>
-     <div className="w-full sm:flex sm:items-center sm:justify-between">
-        <FooterCopyright href="#" by="Govind's blog" year={new Date().getFullYear()}/>
-        <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
-            <FooterIcon href="#" icon={FaFacebook}/>
-            <FooterIcon href="#" icon={FaInstagram}/>
-            <FooterIcon href="#" icon={FaGithub}/>
-            <FooterIcon href="#" icon={FaLinkedin}/>
-            <FooterIcon href="#" icon={FaWhatsapp}/>
 
+        <FooterDivider />
+        <div className="w-full sm:flex sm:items-center sm:justify-between">
+          <FooterCopyright
+            href="#"
+            by="Govind's blog"
+            year={new Date().getFullYear()}
+          />
+          <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
+            <FooterIcon href="#" icon={FaFacebook} />
+            <FooterIcon href="#" icon={FaInstagram} />
+            <FooterIcon href="#" icon={FaGithub} />
+            <FooterIcon href="#" icon={FaLinkedin} />
+            <FooterIcon href="#" icon={FaWhatsapp} />
+          </div>
         </div>
-     </div>
 
       </div>
     </Footer>
